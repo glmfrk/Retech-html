@@ -1,0 +1,31 @@
+@media (max-width: 991px) {
+  .header {
+    padding: 0;
+  }
+  .header .navbar {
+    padding: 0px 15px;
+  }
+  .header .navbar .main-nav {
+    background-color: #1c1c1c;
+    position: absolute;
+    top: 95px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: none;
+    text-align: left;
+    z-index: 999;
+    -webkit-box-shadow: 0px 5px 5px #bfbfbf61;
+    box-shadow: 0px 5px 5px #bfbfbf61;
+  }
+}
+@media (min-width: 1200px) {
+  .header .link {
+    display: none !important;
+  }
+}
+@media (max-width: 1270px) {
+  .header {
+    padding-right: 80px;
+  }
+}
