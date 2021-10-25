@@ -120,13 +120,123 @@ DropDown Menu
   border-radius: 5px;
   display: inline-block;
 }
+
+/*================= 
+BANNER SECTION 
+===================*/
+.banner-wrapper {
+  background: #1c1c1c;
+}
+.banner-section {
+  background: url(../img/banner/banner.jpg) no-repeat center top;
+  background-size: cover;
+  margin-right: 100px;
+  position: relative;
+  padding: 12.3% 0px;
+  z-index: 1;
+}
+.banner-section::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding: 12.3% 0px;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.banner-section .side-link {
+  position: absolute;
+  z-index: 1;
+  top: 43%;
+  right: -450px;
+  transform: translateX(-50%) rotate(-90deg);
+  color: #fff;
+  z-index: 1;
+}
+.banner-section .side-link a {
+  font-family: "CircularStd-Book";
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #7c8082;
+  display: inline-block;
+  vertical-align: center;
+  padding: 0px 10px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.banner-content span {
+  letter-spacing: 3px;
+  color: #fff;
+  font-family: "PlayfairDisplay";
+  font-size: 22px;
+}
+.banner-content h1 {
+  letter-spacing: 3px;
+  color: #fff;
+  font-family: "PlayfairDisplay";
+  font-size: 65px;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.banner-content p {
+  color: #fff;
+  font-size: 30px;
+}
+.banner-btn .btn {
+  width: 200px;
+  border-radius: 50px;
+  margin-top: 25px;
+}
+/*====================== 
+MEDIA QUERY ALL DEVICES 
+========================*/
+
+@media (max-width: 1400px) {
+  .header .navbar .nav-item a {
+    font-size: 14px;
+    margin-right: 25px;
+  }
+  .header .link a {
+    font-size: 17px;
+    padding-right: 5px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .header .link {
+    font-size: 13px;
+    padding-right: 10px !important;
+  }
+}
+@media (max-width: 1250px) {
+  .header .link {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header .logo img {
+    padding-left: 10px;
+  }
+  .header .link {
+    display: none !important;
+  }
+  .header .navbar-toggler {
+    color: #fff;
+  }
+}
+
 @media (max-width: 991px) {
   .header {
     padding: 0;
   }
   .header .header-btn {
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: 20px;
   }
   .header .navbar-toggler {
     border: none;
@@ -172,35 +282,26 @@ DropDown Menu
     line-height: 30px;
   }
 }
-@media (max-width: 1200px) {
-  .header .logo img {
-    padding-left: 10px;
+
+@media (max-width: 575px) {
+  .header-mbl-btn {
+    margin-left: auto;
+    margin-right: 10px;
   }
-  .header .link {
-    display: none !important;
+  .banner-content span {
+    font-size: 20px;
   }
-  .header .navbar-toggler {
-    color: #fff;
-  }
-}
-@media (max-width: 1250px) {
-  .header .link {
-    display: none !important;
+  .banner-content h1 {
+    font-size: 50px;
   }
 }
-@media (max-width: 1270px) {
-  .header .link {
-    font-size: 13px;
-    padding-right: 10px !important;
+
+@media (max-width: 480px) {
+  .banner-content span {
+    font-size: 20px;
   }
-}
-@media (max-width: 1400px) {
-  .header .navbar .nav-item a {
-    font-size: 14px;
-    margin-right: 25px;
-  }
-  .header .link a {
-    font-size: 17px;
-    padding-right: 5px;
+  .banner-content h1 {
+    font-size: 35px;
+    padding-bottom: 0;
   }
 }

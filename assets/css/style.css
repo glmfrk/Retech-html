@@ -57,8 +57,12 @@ h6 {
 }
 p {
   font-family: "CircularStd-Book";
+  color: #7f8080;
+  font-size: 16px;
   font-weight: 400;
-  text-transform: capitalize;
+  line-height: 1.8;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 img {
