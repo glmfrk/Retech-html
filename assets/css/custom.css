@@ -503,8 +503,38 @@ THAMNAILS VIDEO STYLES
   background: #fff;
   border-radius: 5px;
   box-shadow: 0px 0px 40px rgb(230 230 230 / 80%);
+  transition: 0.3s linear;
 }
-
+.services-item-block:hover .item-content {
+  box-shadow: 0px 28px 40px rgb(14 30 53 / 20%);
+}
+.services-item-block.item-content .item-image {
+  display: inline-table;
+  background: #f5a045;
+  height: 100px;
+  width: 100px;
+  border: 8px solid #fff;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 30px rgb(187 187 187 / 50%);
+  box-shadow: 0px 0px 30px rgb(187 187 187 / 50%);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.services-item-block.item-content .item-image img {
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 /*====================== 
 MEDIA QUERY ALL DEVICES 
 ========================*/
