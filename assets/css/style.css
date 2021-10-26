@@ -13,7 +13,10 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+::before,
+::after {
+  box-sizing: border-box;
+}
 html {
   font-size: 62.5%;
 }
@@ -54,6 +57,12 @@ h6 {
   font-weight: 700;
   color: #1c1c1c;
   text-transform: capitalize;
+}
+h4 {
+  font-family: "CircularStd-Book";
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
 }
 p {
   font-family: "CircularStd-Book";
