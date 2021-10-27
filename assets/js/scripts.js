@@ -39,4 +39,30 @@ $(document).ready(function () {
         }
 
     });
+
+  // TESTIMONILA START
+
+  $(".testimonial-carosss").owlCarousel({
+    loop: true,
+    margin: 30,
+    autoplay: true,
+    nav: false,
+    dots: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        768: {
+            items: 1.7
+        },
+        1000: {
+            items: 1.7
+        }
+    }
+});
+
+
 })

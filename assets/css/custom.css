@@ -745,6 +745,7 @@ TESTIMONIAL SECTION STYLES
   position: relative;
   border-radius: 5px;
 }
+
 .testimonial-section
   .testimonial-carosss
   .testCarosss-item
@@ -759,6 +760,30 @@ TESTIMONIAL SECTION STYLES
   top: 37%;
   left: 50%;
   transform: translate(-50% -50%);
+}
+.testimonial-section .testimonial-carosss .testCarosss-item .test-image-01 img {
+  width: auto;
+  height: auto;
+  display: block;
+  margin: -65px auto 0 auto;
+  border-radius: 5px;
+}
+.testimonial-section .testimonial-carosss .testCarosss-item .test-content {
+  padding: 30px 65px;
+}
+.testimonial-section .testimonial-carosss .testCarosss-item .test-content p {
+  padding-bottom: 15px;
+}
+.testimonial-section
+  .testimonial-carosss
+  .testCarosss-item
+  .test-content
+  h4
+  span {
+  font-family: "CircularStd-Book";
+  font-size: 16px;
+  color: #7f8080;
+  font-weight: 400;
 }
 /*====================== 
 MEDIA QUERY ALL DEVICES 
