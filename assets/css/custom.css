@@ -496,44 +496,269 @@ THAMNAILS VIDEO STYLES
   }
 }
 
-/* POPULAR SERVICES STYLES */
+/*================= 
+POPULAR SERVICES STYLES
+========================= */
+.service-section {
+  padding-top: 340px;
+  padding-bottom: 100px;
+  background: #f7f7f7;
+  margin-top: -260px;
+  z-index: -1;
+  overflow: hidden;
+}
+.service-section .section-title .sub-title h5 {
+  color: #1c1c1c;
+  font-weight: 500;
+}
 .services-item-block .item-content {
-  padding: 40px;
-  margin-bottom: 30px;
+  padding: 50px;
   background: #fff;
   border-radius: 5px;
+  margin-bottom: 30px;
   box-shadow: 0px 0px 40px rgb(230 230 230 / 80%);
   transition: 0.3s linear;
 }
 .services-item-block:hover .item-content {
   box-shadow: 0px 28px 40px rgb(14 30 53 / 20%);
 }
-.services-item-block.item-content .item-image {
-  display: inline-table;
+.services-item-block .item-content .item-image {
   background: #f5a045;
   height: 100px;
   width: 100px;
   border: 8px solid #fff;
   border-radius: 50px;
-  -webkit-box-shadow: 0px 0px 30px rgb(187 187 187 / 50%);
   box-shadow: 0px 0px 30px rgb(187 187 187 / 50%);
-  -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
-.services-item-block.item-content .item-image img {
+.services-item-block .item-content .item-image img {
   width: auto;
   height: auto;
   display: block;
-  margin: 0 auto;
+}
+.services-item-block .content-item {
+  margin-left: 30px;
+  flex: 1;
+  text-align: left;
+}
+.services-item-block .content-item h4 a {
+  color: #1c1c1c;
+  display: block;
+  padding-bottom: 5px;
+  text-align: left;
+  font-family: "PlayfairDisplay";
+  transition: 0.3s linear;
+}
+.services-item-block .content-item h4 a:hover {
+  color: #f5a045;
+}
+.services-item-block .content-item p {
+  font-family: "CircularStd-Book";
+  color: #7f8080;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+/*================= 
+CAROUSER SLIDER STYLES
+========================= */
+.carousel-section {
+  padding-top: 130px;
+  padding-bottom: 0;
+  background-color: #ffffff;
+  display: block;
+  overflow: hidden;
+}
+.carousel-section .carosss-content {
+  position: absolute;
+  background: #f5a045;
+  top: 40%;
+  left: 30px;
+  transform: translateX(-50%) rotate(-90deg);
+  padding: 43px 60px 52px;
+  border-radius: 5px;
+}
+.carousel-section .carosss-content h3 {
+  color: #ffffff;
+  font-size: 36px;
+}
+
+/*====================== 
+PRICEIG SECTION STYLES 
+========================*/
+.pricing-section {
+  padding-top: 107px;
+  padding-bottom: 110px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.pricing-section .sub-title h5 {
+  color: #1c1c1c;
+}
+.pricing-card {
+  background: #ffffff;
+  border: 1px solid #e8e7e7;
+  padding: 40px;
+  margin: 0px 15px 30px 15px;
+  box-shadow: 0px 0px 0px 15px #f7f7f7;
+  transition: all 0.3s linear;
+}
+.pricing-card:hover {
+  background: #1c1c1c;
+}
+.pricing-card .pricing-header h4 {
+  font-size: 24px;
+  font-family: "CircularStd-Book";
+  color: #7f8080;
+  font-weight: 400;
+}
+
+.pricing-card .pricing-header .pricing-price {
+  padding-top: 10px;
+  color: #fff;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e8e7e7;
+}
+.pricing-card .pricing-header .pricing-price p {
+  font-family: "PlayfairDisplay";
+  color: #1c1c1c;
+  font-size: 48px;
+  font-weight: 700;
+  position: relative;
+}
+.pricing-card .pricing-header .pricing-price p::after {
+  position: absolute;
+  content: "";
+  top: 12px;
+  right: -10px;
+  height: 35px;
+  width: 2px;
+  background: #1c1c1c;
+  transform: rotate3d(1, 1, 1, 45deg);
+}
+.pricing-card:hover .pricing-header p {
+  color: #ffffff;
+}
+.pricing-card:hover .pricing-header p::after {
+  background-color: #7f8080;
+}
+.pricing-card .pricing-header .pricing-price span {
+  font-family: "CircularStd-Book";
+  color: #7f8080;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+.pricing-card .pricing-body .pricing-list li {
+  display: flex;
+  align-items: baseline;
+  padding: 10px;
+}
+.pricing-card .pricing-body .pricing-list li i {
+  font-size: 15px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #1c1c1c;
+  margin-right: 20px;
+  border-radius: 50%;
+  display: inline;
+  border: 1px solid #e8e7e7;
+  transition: all 0.3s linear;
+}
+.pricing-card:hover .pricing-body .pricing-list li i {
+  color: #f7f7f7;
+}
+.pricing-card .pricing-body .pricing-list li h6 {
+  font-family: "CircularStd-Book";
+  color: #7f8080;
+  font-size: 16px;
+  font-weight: 400;
+}
+.pricing-card:hover .pricing-body .pricing-list li h6 {
+  color: #f7f7f7;
+}
+
+.pricing-card a.btn {
+  width: 165px;
+  border-radius: 50px;
+  color: #1c1c1c;
+  padding: 14px 5px;
+  background: #f7f7f7;
+  border: 1px solid #e4e1e1;
+}
+
+.pricing-card:hover .btn-secondary {
+  color: #f7f7f7;
+  background-color: #f5a045;
+  border: none;
+}
+.pricing-card .btn-secondary i {
+  color: #1c1c1c;
+}
+.pricing-card:hover .btn-secondary i {
+  color: #ffffff;
+}
+
+/*=================
+TESTIMONIAL SECTION STYLES
+============================  */
+
+.testimonial-section {
+  background: #ffffff;
+  padding-top: 0;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+.testimonial-section .side-space {
+  padding-left: 380px;
+}
+.testimonial-section .client-feedback-wrapper {
+  padding-top: 35px;
+}
+.testimonial-section .client-feedback-wrapper .sub-title h5 {
+  color: #1c1c1c;
+}
+.testimonial-section .client-feedback-wrapper .client-content-mgs p {
+  padding-bottom: 30px;
+}
+.testimonial-section .testimonial-btn a {
+  width: 200px;
+  border-radius: 50px;
+}
+
+/* TESTIMONAIAL CAROUSEL SLIDES STYLES  */
+.testimonial-section .testimonial-carosss {
+  position: relative;
+  padding: 65px 0px 50px 0px;
+}
+.testimonial-section .testimonial-carosss .testCarosss-item {
+  background: #fff;
+  margin: 100px 0px 30px 30px;
+  -webkit-box-shadow: 0 2px 30px 0 rgb(189 189 189 / 50%);
+  box-shadow: 0 2px 30px 0 rgb(189 189 189 / 50%);
+  position: relative;
+  border-radius: 5px;
+}
+.testimonial-section
+  .testimonial-carosss
+  .testCarosss-item
+  .transparent-image
+  img {
+  position: absolute;
+  content: "";
+  display: block;
+  width: auto;
+  height: auto;
+  margin: auto;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50% -50%);
 }
 /*====================== 
 MEDIA QUERY ALL DEVICES 
@@ -612,14 +837,8 @@ MEDIA QUERY ALL DEVICES
   }
   .header .navbar .main-nav .nav-item a {
     color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
     align-items: baseline;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 13px 15px;
     width: 100%;
@@ -629,9 +848,29 @@ MEDIA QUERY ALL DEVICES
     margin-top: 80px;
     padding-top: 30px;
   }
+  .services-item-block .item-content {
+    padding: 40px 10px;
+    text-align: center;
+  }
+  .services-item-block .item-content .item-image {
+    margin: 0 auto;
+  }
+  .services-item-block .item-content .content-item {
+    padding-top: 20px;
+    margin-left: 0;
+  }
+  .services-item-block .item-content .content-item h4 a {
+    text-align: center;
+  }
+  .services-item-block .item-content .content-item p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 575px) {
+  h4 {
+    font-size: 20px;
+  }
   .header-mbl-btn {
     margin-left: auto;
     margin-right: 10px;
@@ -645,11 +884,27 @@ MEDIA QUERY ALL DEVICES
 }
 
 @media (max-width: 480px) {
+  h2 {
+    font-size: 25px;
+  }
   .banner-content span {
     font-size: 20px;
   }
   .banner-content h1 {
     font-size: 35px;
     padding-bottom: 0;
+  }
+  .video-image .video-bg h4 {
+    font-size: 18px;
+  }
+  .video-image .video-bg .fancy-box .video-box .video-btn {
+    height: 65px;
+    width: 65px;
+    line-height: 70px;
+  }
+  .video-image .video-bg .fancy-box .video-box .video-btn i {
+    font-size: 15px;
+    top: -2px;
+    left: 2px;
   }
 }
