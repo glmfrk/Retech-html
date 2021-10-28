@@ -845,11 +845,254 @@ COUNTER SECTION STYLES
 /*============= 
 CONTECT SECTION STYLES
 ======================= */
+.team-wrapper {
+  background-color: #1c1c1c !important;
+}
+.team-wrapper .team-section {
+  background: url(../img/team/background.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  padding-top: 130px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+.team-wrapper .team-section .section-title h2 {
+  color: #fff;
+}
+.team-wrapper .team-section .item-team-block .team-content {
+  margin-bottom: 30px;
+}
+.team-wrapper .team-section .item-team-block .team-content .team-image {
+  position: relative;
+  transition: 0.3s linear;
+}
+.team-wrapper .team-section .item-team-block .team-content .team-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  transition: 0.3s linear;
+}
+.team-wrapper
+  .team-section
+  .item-team-block
+  .team-content
+  .team-image
+  .team-info {
+  background: #f5a045;
+  text-align: center;
+  padding: 20px 70px;
+  position: absolute;
+  top: 39%;
+  left: 13px;
+  transform: translateX(-39%) rotate(-90deg) perspective(800px) rotateX(-20deg);
+  transition: 0.3s linear;
+}
+.team-wrapper
+  .team-section
+  .item-team-block
+  .team-content:hover
+  .team-image
+  .team-info {
+  left: 15px;
+  transform: translateX(-39%) rotate(-90deg) perspective(800px) rotateX(0deg);
+}
+.item-team-block .team-content .team-image .team-info h4 {
+  color: #fff;
+}
+.item-team-block .team-content .team-image .team-info span {
+  font-family: "CircularStd-Book";
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+/*============= 
+PARTNER SECTION STYLES
+======================= */
+.partner-section {
+  background: #f7f7f7;
+  padding: 130px 100px;
+  overflow: hidden;
+}
+.partner-section img {
+  width: auto !important;
+  height: auto;
+  display: block;
+}
+/*============= 
+BLOG SECTION STYLES
+======================= */
+.blog-section {
+  padding-top: 130px;
+  padding-bottom: 70px;
+  overflow: hidden;
+}
+.blog-section .sub-title h5 {
+  color: #1c1c1c;
+}
+.blog-section .item-blog-block {
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: 0.3s linear;
+}
+.blog-section .item-blog-block .item-img-blog {
+  position: relative;
+  overflow: hidden;
+}
+.blog-section .item-blog-block .item-img-blog img {
+  transform: scale(1);
+  transition: 1s;
+}
+.blog-section .item-blog-block:hover .item-img-blog img {
+  transform: scale(1.1);
+}
+.blog-section .item-blog-block .item-blog-content {
+  background: #fff;
+  padding-bottom: 30px;
+  transition: 0.3s linear;
+}
+.blog-section .item-blog-block .item-blog-content .blog-meta {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.blog-section .item-blog-block .item-blog-content .blog-meta a {
+  font-family: "CircularStd-Book";
+  font-size: 13px;
+  font-weight: 400;
+  color: #7f8080;
+  text-transform: uppercase;
+  transition: 0.3s linear;
+}
+.item-blog-block h4 a {
+  font-family: "PlayfairDisplay";
+  font-size: 22px;
+  color: #1c1c1c;
+  padding-bottom: 10px;
+  display: block;
+  text-align: left;
+}
+.item-blog-block:hover h4 a {
+  color: #f5a045;
+}
+/*============= 
+CONTECT SECTION STYLES
+======================= */
 .contact-section {
   background: #1c1c1c;
   padding: 90px 100px 115px 100px;
   border-top: 1px solid #282828;
 }
+.contact-section .contact-title {
+  padding-top: 30px;
+}
+.contact-section .contact-title .logo img {
+  width: auto;
+  height: auto;
+  display: block;
+}
+.contact-section .contact-title .contact-address {
+  padding-top: 35px;
+}
+.contact-section .contact-title .contact-address .content-info {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 25px;
+}
+.contact-section .contact-title .contact-address .content-info h5 {
+  color: #7f8080;
+  font-family: "CircularStd-Book";
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+.contact-address .content-info a {
+  color: #7f8080;
+  font-family: "CircularStd-Book";
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0px;
+}
+.contact-section .social-icon a {
+  font-size: 20px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 30px;
+  transition: 0.3s linear;
+}
+.contact-section .social-icon a:hover {
+  color: #f5a045;
+}
+.contact-section .contact-title h4 {
+  font-family: "PlayfairDisplay";
+  font-size: 24px;
+  color: #fff;
+  padding-bottom: 20px;
+  text-align: left;
+}
+.contact-section .contact-title h4.side-heading {
+  padding-left: 115px;
+}
+.contact-section .contact-title .text-box {
+  padding-right: 35px;
+}
+.contact-section .contact-title .text-box p {
+  font-size: 16px;
+  color: #7f8080;
+  padding-bottom: 10px;
+}
+.contact-section .contact-title .text-box form {
+  width: 100%;
+  padding: 0px 5px;
+  border-radius: 3px;
+  background: #fff;
+}
+.contact-section .contact-title .text-box form > input {
+  font-family: "CircularStd-Book";
+  font-size: 15px;
+  font-weight: 400;
+  color: #7f8080;
+  width: 100%;
+  padding: 20px 15px;
+  background: #fff;
+  border: none;
+  outline: none;
+  display: block;
+  position: relative;
+}
+.contact-section .contact-title .text-box form > button {
+  text-align: center;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+.contact-section .contact-title .text-box form > button > i {
+  font-size: 18px;
+  color: #fff;
+  height: 55px;
+  width: 60px;
+  background: #f5a045;
+  border-radius: 3px;
+  line-height: 55px;
+  transition: all 0.3s linear;
+}
+.contact-section .contact-title .text-box form:hover > button > i {
+  color: #fff;
+  background: #1c1c1c;
+}
+.contact-section .contact-title .contact-image img {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  margin: 5px 10px 5px 0px;
+}
+
 .contact-link-post li a {
   font-family: "CircularStd-Book";
   font-size: 16px;
@@ -857,6 +1100,7 @@ CONTECT SECTION STYLES
   padding-bottom: 15px;
   font-weight: 400;
   display: inline-block;
+  text-transform: capitalize;
   transition: all 0.3s linear;
 }
 .contact-link-post li a:hover {
@@ -885,6 +1129,7 @@ FOOTER SECTION
   font-weight: 400;
   color: #fff;
   padding-left: 20px;
+  text-transform: capitalize;
   transition: all 0.3s linear;
 }
 .footer-section .footer-content .footer-link a:hover {

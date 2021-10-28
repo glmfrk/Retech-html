@@ -1,3 +1,8 @@
+@media (max-width: 1650px) {
+  .testimonial-section .side-space {
+    padding-left: 155px;
+  }
+}
 @media (max-width: 1400px) {
   .header .navbar .nav-item a {
     font-size: 14px;
@@ -12,6 +17,19 @@
 @media (max-width: 1370px) {
   .testimonial-section .testCarosss-item .test-content {
     padding: 30px !important;
+  }
+  .testimonial-section .side-space {
+    padding-left: 115px;
+  }
+  .contact-section {
+    padding-left: 15px;
+    padding-right: 0;
+  }
+  .contact-section .contact-title h4.side-heading {
+    padding-left: 0;
+  }
+  .contact-section .contact-title .contact-image {
+    justify-content: flex-start !important;
   }
 }
 @media (max-width: 1270px) {

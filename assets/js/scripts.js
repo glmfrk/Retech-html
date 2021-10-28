@@ -64,5 +64,33 @@ $(document).ready(function () {
     }
 });
 
+ //=============================
+    // Partner slider carousel
+    //=============================
+
+
+    $(".partner-logo").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        nav: false,
+        dots: false,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            768: {
+                items: 4
+            },
+            1000: {
+                items: 5
+            }
+        }
+    });
+
+
 
 })
