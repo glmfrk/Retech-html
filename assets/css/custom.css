@@ -345,6 +345,7 @@ ABOUT SECTION  STYLES
   font-size: 22px;
   display: block;
   color: #1c1c1c;
+  text-align: left;
   transition: 0.3s linear;
 }
 .about-content .about-block:hover .content h4 a {
@@ -977,6 +978,23 @@ BLOG SECTION STYLES
 }
 .item-blog-block:hover h4 a {
   color: #f5a045;
+}
+.item-blog-block .blog-btn a {
+  font-family: "CircularStd-Book";
+  font-size: 16px;
+  color: #1c1c1c;
+  margin-top: 15px;
+  display: block;
+  font-weight: 500;
+  transition: 0.3s linear;
+}
+.item-blog-block:hover .blog-btn a {
+  color: #f5a045;
+}
+.item-blog-block .blog-btn a i {
+  font-size: 10px;
+  margin-left: 5px;
+  transition: 0.3s linear;
 }
 /*============= 
 CONTECT SECTION STYLES
