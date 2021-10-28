@@ -3,7 +3,18 @@ $(document).ready(function () {
         $(this).addClass('.active')
     })
 
+    //=============================
+    // Sticky Start
+    //=============================
 
+    $(window).on('scroll', function (event) {
+        var scroll = $(window).scrollTop();
+        if (scroll < 200) {
+            $(".fixed-menu").removeClass("sticky");
+        } else {
+            $(".fixed-menu").addClass("sticky");
+        }
+    });
       //=============================
     // MOBILE Nav 
     //=============================
@@ -91,6 +102,13 @@ $(document).ready(function () {
         }
     });
 
+    //======================
+    // COUNTER-UP 
+    //======================
 
+    $('.counter').countUp({
+        'time': 6000,
+        'delay': 10
+    });
 
 })
