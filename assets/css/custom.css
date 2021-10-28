@@ -242,6 +242,9 @@ BANNER SECTION
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
+.banner-section .side-link a:hover {
+  color: #f5a045;
+}
 .banner-content span {
   letter-spacing: 3px;
   color: #fff;
@@ -737,10 +740,19 @@ TESTIMONIAL SECTION STYLES
   position: relative;
   padding: 65px 0px 50px 0px;
 }
+.testimonial-section .testimonial-carosss::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background: #f7f7f7;
+  z-index: -1;
+}
 .testimonial-section .testimonial-carosss .testCarosss-item {
   background: #fff;
   margin: 100px 0px 30px 30px;
-  -webkit-box-shadow: 0 2px 30px 0 rgb(189 189 189 / 50%);
   box-shadow: 0 2px 30px 0 rgb(189 189 189 / 50%);
   position: relative;
   border-radius: 5px;
@@ -757,16 +769,16 @@ TESTIMONIAL SECTION STYLES
   width: auto;
   height: auto;
   margin: auto;
-  top: 37%;
-  left: 50%;
+  top: 23%;
+  left: 31%;
   transform: translate(-50% -50%);
 }
 .testimonial-section .testimonial-carosss .testCarosss-item .test-image-01 img {
   width: auto;
   height: auto;
-  display: block;
+  display: inline-block;
   margin: -65px auto 0 auto;
-  border-radius: 5px;
+  border-radius: 50%;
 }
 .testimonial-section .testimonial-carosss .testCarosss-item .test-content {
   padding: 30px 65px;
@@ -785,10 +797,104 @@ TESTIMONIAL SECTION STYLES
   color: #7f8080;
   font-weight: 400;
 }
+/*===============
+COUNTER SECTION STYLES
+======================= */
+.counter-section {
+  padding: 80px 0px;
+  overflow: hidden;
+}
+.counter-section .icon-box-item {
+  position: relative;
+}
+.counter-section .icon-box-item::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  background: #f1f1f1;
+  border-radius: 50px;
+}
+.counter-section .icon-box-item img {
+  width: auto;
+  height: auto;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 25px;
+}
+.counter-section .icon-box-item .counter {
+  font-family: "PlayfairDisplay";
+  font-size: 65px;
+  color: #f5a045;
+  font-weight: 700;
+  margin-right: 18px;
+}
+.counter-section .icon-box-item h3 {
+  font-size: 27px;
+  color: #1c1c1c;
+  font-weight: 700;
+  text-align: left;
+  text-transform: capitalize;
+}
+.counter-section .icon-box-item h3 span {
+  font-size: 27px;
+  color: #7f8080;
+}
+/*============= 
+CONTECT SECTION STYLES
+======================= */
+.contact-section {
+  background: #1c1c1c;
+  padding: 90px 100px 115px 100px;
+  border-top: 1px solid #282828;
+}
+.contact-link-post li a {
+  font-family: "CircularStd-Book";
+  font-size: 16px;
+  color: #7f8080;
+  padding-bottom: 15px;
+  font-weight: 400;
+  display: inline-block;
+  transition: all 0.3s linear;
+}
+.contact-link-post li a:hover {
+  color: #f5a045;
+}
+/*========== 
+FOOTER SECTION
+=================  */
+.footer-section {
+  background: #1c1c1c;
+  padding: 30px 100px;
+  border-top: 1px solid #282828;
+}
+.footer-section .footer-content p a {
+  font-family: "CircularStd-Book";
+  font-weight: 400;
+  color: #f5a045;
+  transition: 0.3s linear;
+}
+.footer-section .footer-content p a:hover {
+  color: #fff;
+}
+.footer-section .footer-content .footer-link a {
+  font-family: "CircularStd-Book";
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  padding-left: 20px;
+  transition: all 0.3s linear;
+}
+.footer-section .footer-content .footer-link a:hover {
+  color: #f5a045;
+}
+
 /*====================== 
 MEDIA QUERY ALL DEVICES 
 ========================*/
-
+/* 
 @media (max-width: 1400px) {
   .header .navbar .nav-item a {
     font-size: 14px;
@@ -800,6 +906,11 @@ MEDIA QUERY ALL DEVICES
   }
 }
 
+@media (max-width: 1370px) {
+  .testimonial-section .testCarosss-item .test-content {
+    padding: 30px !important;
+  }
+}
 @media (max-width: 1270px) {
   .header .link {
     font-size: 13px;
@@ -869,6 +980,13 @@ MEDIA QUERY ALL DEVICES
     width: 100%;
     line-height: 30px;
   }
+  .header-mbl-btn {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  .banner-section .side-link {
+    top: 50%;
+  }
   .about-section .about-image {
     margin-top: 80px;
     padding-top: 30px;
@@ -892,13 +1010,20 @@ MEDIA QUERY ALL DEVICES
   }
 }
 
+@media (max-width: 600px) {
+  .testimonial-section .side-space {
+    padding-left: 0px;
+  }
+}
 @media (max-width: 575px) {
   h4 {
     font-size: 20px;
   }
-  .header-mbl-btn {
-    margin-left: auto;
-    margin-right: 10px;
+  .section-title{
+    padding-bottom: 35px;
+  }
+  .banner-section {
+    margin-right: 50px;
   }
   .banner-content span {
     font-size: 20px;
@@ -906,19 +1031,60 @@ MEDIA QUERY ALL DEVICES
   .banner-content h1 {
     font-size: 50px;
   }
+  .banner-section .side-link {
+    top: 43%;
+    right: -425px;
+  }
+  .testimonial-section .testimonial-carosss {
+    padding: 30px 0px 20px 0px;
+  }
+  .testimonial-section .testCarosss-item {
+    margin: 100px 10px 30px 10px !important;
+  }
+  .testimonial-section .testCarosss-item .test-content {
+    padding: 30px 15px !important;
+  }
 }
 
 @media (max-width: 480px) {
+  section {
+    padding: 90px 0px !important;
+  }
+  h5 {
+    font-size: 17px !important;
+}
+  .banner-section .banner-content h1 {
+    padding-bottom: 0px;
+    font-size: 35px;
+    letter-spacing: 0;
+  }
+  .banner-section .banner-content p {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .banner-section .banner-content span {
+    font-size: 20px;
+  }
+  .banner-section .side-link {
+    top: 43%;
+    right: -395px;
+  }
+  .banner-section .side-link a {
+    font-size: 16px;
+  }
+  .about-section .section-title h2 {
+    font-size: 25px;
+  }
+  .about-content .about-block .icon {
+    margin-bottom: 20px;
+  }
+  .about-content .about-block .content h4 a {
+    text-align: left;
+  }
   h2 {
     font-size: 25px;
   }
-  .banner-content span {
-    font-size: 20px;
-  }
-  .banner-content h1 {
-    font-size: 35px;
-    padding-bottom: 0;
-  }
+
   .video-image .video-bg h4 {
     font-size: 18px;
   }
@@ -932,4 +1098,10 @@ MEDIA QUERY ALL DEVICES
     top: -2px;
     left: 2px;
   }
+  
+
+.testimonial-section .testimonial-carosss .testCarosss-item .transparent-image img {
+  top: 0%;
+  left: 13%;
 }
+ */

@@ -53,10 +53,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display";
   font-weight: 700;
   color: #1c1c1c;
   text-transform: capitalize;
+}
+h1 {
+  text-transform: none;
 }
 h4 {
   font-family: "CircularStd-Book";
