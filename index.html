@@ -40,6 +40,12 @@
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="status">
+        <img src="./assets/img/logo/favicon.png" alt="perloader" />
+      </div>
+    </div>
     <header class="header fixed-menu">
       <nav class="navbar navbar-expand-lg top-menu">
         <div class="container-fluid">
@@ -52,10 +58,10 @@
           <div class="collapse main-nav navbar-collapse">
             <ul class="navbar-nav m-auto">
               <li class="nav-item">
-                <a href="./home.html">Home</a>
+                <a href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a href="./about.html">About</a>
+                <a href="#">About</a>
               </li>
               <li class="nav-item">
                 <a href="#">Service</a>
@@ -87,7 +93,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="./contact.html">Contact US</a>
+                <a href="#">Contact US</a>
               </li>
             </ul>
           </div>
@@ -146,8 +152,8 @@
     <!-- ABOUT SECTION START  -->
     <section id="about" class="about-section bg-white">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-5 d-lg-block d-none">
+        <div class="row d-md-flex d-flex">
+          <div class="col-lg-5 col-md-5 d-lg-block d-md-block d-none">
             <div class="about-image">
               <img src="./assets/img/about/about-1.jpg" alt="about-1" />
               <div class="image-2">
@@ -158,8 +164,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-1"></div>
-          <div class="col-lg-6">
+          <div class="col-lg-1 col-md-1"></div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="section-title single-border text-left">
               <div class="sub-title">
                 <h5>About Retech</h5>
@@ -177,7 +183,7 @@
                 vehicula.
               </p>
               <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                   <div class="about-block">
                     <div class="icon">
                       <img src="./assets/img/about/1.png" alt="" srcset="" />
@@ -191,7 +197,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                   <div class="about-block">
                     <div class="icon">
                       <img src="./assets/img/about/2.png" alt="" srcset="" />
@@ -214,7 +220,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-5 d-lg-none d-block">
+          <div class="col-lg-5 d-lg-none d-md-none d-block">
             <div class="about-image">
               <img src="assets/img/about/about-1.jpg" alt="About" />
               <div class="image-2">
@@ -796,7 +802,7 @@
                   <div class="team-image">
                     <img src="./assets/img/team/team-2.jpg" alt="" />
                     <div class="team-info">
-                      <h4>Scott Grey</h4>
+                      <h4>Martyn D Joseph</h4>
                       <span>Senior Designer</span>
                     </div>
                   </div>
@@ -809,7 +815,7 @@
                   <div class="team-image">
                     <img src="./assets/img/team/team-3.jpg" alt="" />
                     <div class="team-info">
-                      <h4>Scott Grey</h4>
+                      <h4>Russel Reed</h4>
                       <span>Senior Designer</span>
                     </div>
                   </div>
@@ -937,7 +943,7 @@
     <!-- BLOG SECTION  END-->
 
     <!-- CONTACT SECTION START -->
-    <div class="contact-section">
+    <section class="contact-section">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
@@ -1055,7 +1061,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- CONTACT SECTION END -->
     <!-- FOOTER START -->
     <footer class="footer-section">
@@ -1092,6 +1098,8 @@
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/owl.carousel.min.js"></script>
     <script src="./assets/js/jquery.fancybox.min.js"></script>
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/jquery.waypoints.min.js"></script>
 
     <script src="./assets/js/scripts.js"></script>
   </body>

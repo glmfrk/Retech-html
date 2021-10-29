@@ -2,6 +2,16 @@ $(document).ready(function () {
     $('a').click(function () {
         $(this).addClass('.active')
     })
+  
+    //=============================
+    //Preloader Start
+    //=============================
+
+    $(window).on('load', function () {
+        $('#status').fadeOut();
+        $('#preloader').delay(500).fadeOut('slow');
+        $('body').delay(500).css({ 'overflow': 'visible' });
+    });
 
     //=============================
     // Sticky Start
@@ -106,9 +116,25 @@ $(document).ready(function () {
     // COUNTER-UP 
     //======================
 
-    $('.counter').countUp({
-        'time': 6000,
-        'delay': 10
+   
+    $('.counter').counterUp();
+   
+     //======================
+    //  Back to Top JS 
+    //======================
+
+
+    $('body').append('<div id="toTop" class="back-to-top"><i class="fas fa-arrow-up"></i></div>');
+    $(window).on('scroll', function () {
+        if ($(this).scrollTop() != 0) {
+            $('#toTop').fadeIn();
+        } else {
+            $('#toTop').fadeOut();
+        }
+    });
+    $('#toTop').on('click', function () {
+        $("html, body").animate({ scrollTop: 0 }, 500);
+        return false;
     });
 
 })
