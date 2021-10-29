@@ -195,6 +195,11 @@
   .testimonial-section .side-space {
     padding-left: 20px;
   }
+  .contact-section .contact-title .logo img {
+    width: 80%;
+    height: auto;
+    display: block;
+  }
 }
 
 @media (max-width: 767px) {
